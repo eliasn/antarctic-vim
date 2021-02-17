@@ -319,12 +319,15 @@
         [ "Comment", grey_252, normal_text, "NONE" ],
         [ "Constant", "NONE", normal_text, "NONE" ],
         [ "Error", lightcoral_210, normal_text, "NONE" ],
+        [ "LspDiagnosticsError", "Error" ],
+        [ "LspDiagnosticsErrorSign", "Error" ],
+        [ "LspDiagnosticsErrorFloating", "Error" ],
         [ "Identifier", "NONE", normal_text, "NONE" ],
         [ "Ignore", "NONE", normal_text, "NONE" ],
         [ "PreProc", "NONE", normal_text, "NONE" ],
         [ "Special", "NONE", normal_text, "NONE" ],
         [ "Statement", "NONE", normal_text, "NONE" ],
-        [ "String", "NONE", darkblue_18, "NONE" ],
+        [ "String", "NONE", slateblue_62, "NONE" ],
         [ "Number", "Constant" ],
         [ "Todo", cyan_51, normal_text, "NONE" ],
         [ "Type", "NONE", normal_text, "NONE" ],
@@ -342,9 +345,9 @@
         [ "helpNormal", "NONE", normal_text, "NONE" ],
         [ "Visual", lightskyblue_153, "NONE", "NONE" ],
         [ "VisualNOS", lightskyblue_153, "NONE", "NONE" ],
-        [ "Pmenu", grey_248, normal_text, "NONE" ],
+        [ "Pmenu", grey_253, normal_text, "NONE" ],
         [ "PmenuSbar", background, normal_text, "NONE" ],
-        [ "PmenuSel", background, normal_text, "NONE" ],
+        [ "PmenuSel", cursorline, normal_text, "NONE" ],
         [ "PmenuThumb", background, normal_text, "NONE" ],
         [ "FoldColumn", grey_249, normal_text, "NONE" ],
         [ "Folded", grey_253, grey_237, "italic" ],
@@ -354,22 +357,25 @@
         [ "DiffChange", lightgoldenrod_222, normal_text, "NONE" ],
         [ "DiffDelete", mistyrose_224, normal_text, "NONE" ],
         [ "DiffText", wheat_229, normal_text, "NONE" ],
-        [ "Search", yellow_226, "NONE", "NONE" ],
-        [ "IncSearch", "Search"],
+        [ "Search", wheat_229, "NONE", "NONE" ],
+        [ "IncSearch", gold_220, "NONE", "NONE" ],
         [ "Directory", "NONE", normal_text, "NONE" ],
-        [ "MatchParen", springgreen_47, normal_text, "NONE" ],
+        [ "MatchParen", plum_219, normal_text, "NONE" ],
         [ "SpellBad", mistyrose_224, normal_text, "NONE" ],
         [ "SpellCap", plum_219, normal_text, "NONE" ],
         [ "SpellLocal", navajowhite_223, normal_text, "NONE" ],
         [ "SpellRare", thistle_225, normal_text, "NONE" ],
-        [ "ColorColumn", background, "NONE", "NONE" ],
+        [ "ColorColumn", grey_252, "NONE", "NONE" ],
         [ "SignColumn", background, normal_text, "NONE" ],
         [ "ErrorMsg", pink_218, normal_text, "NONE" ],
         [ "ModeMsg", background, normal_text, "NONE" ],
         [ "MoreMsg", background, normal_text, "NONE" ],
         [ "Question", background, normal_text, "NONE" ],
         [ "WarningMsg", pink_218, normal_text, "NONE" ],
-        [ "Cursor", grey_232, "NONE", "NONE" ],
+        [ "LspDiagnosticsWarning", "WarningMsg" ],
+        [ "LspDiagnosticsWarningSign", "WarningMsg" ],
+        [ "LspDiagnosticsWarningFloating", "WarningMsg" ],
+        [ "Cursor", grey_232, normal_text, "NONE" ],
         [ "CursorLine", cursorline, "NONE", "NONE" ],
         [ "CursorColumn", cursorline, "NONE", "NONE" ],
         [ "QuickFixLine", "Search" ],
@@ -381,6 +387,16 @@
         [ "diffAdded", "DiffAdd" ],
         [ "diffRemoved", "DiffDelete" ],
         [ "EndOfBuffer", "ColorColumn" ],
+    ]
+
+    fzf_colors = [
+        [ 'fg', 'fg', 'Normal' ],
+        [ 'bg', 'bg', 'Normal' ],
+        [ 'hl', 'bg', 'IncSearch' ],
+        [ 'hl+', 'bg', 'IncSearch' ],
+        [ 'fg+', 'fg', 'Normal' ],
+        [ 'bg+', 'bg', 'ColorColumn' ],
+        [ 'pointer', 'bg', 'IncSearch' ],
     ]
 
     # Define the color palette used by :terminal when in GUI Vim
@@ -435,5 +451,11 @@ let g:terminal_ansi_colors = [
 <% end -%>
         \ ]
 <% end -%>
+
+let g:fzf_colors = {
+<% for color in fzf_colors -%>
+  \ '<%= color[0] %>': ['<%= color[1] %>', '<%= color[2] %>'],
+<% end -%>
+  \ }
 
 " Generated with RNB (https://gist.github.com/romainl/5cd2f4ec222805f49eca)
