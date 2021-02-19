@@ -22,7 +22,7 @@ hi Error ctermbg=210 ctermfg=234 cterm=NONE guibg=#ff8787 guifg=#1c1c1c gui=NONE
 hi Identifier ctermbg=NONE ctermfg=234 cterm=NONE guibg=NONE guifg=#1c1c1c gui=NONE
 hi Ignore ctermbg=NONE ctermfg=234 cterm=NONE guibg=NONE guifg=#1c1c1c gui=NONE
 hi PreProc ctermbg=NONE ctermfg=234 cterm=NONE guibg=NONE guifg=#1c1c1c gui=NONE
-hi Special ctermbg=NONE ctermfg=218 cterm=NONE guibg=NONE guifg=#ffafd7 gui=NONE
+hi Special ctermbg=NONE ctermfg=234 cterm=NONE guibg=NONE guifg=#1c1c1c gui=NONE
 hi Statement ctermbg=NONE ctermfg=234 cterm=NONE guibg=NONE guifg=#1c1c1c gui=NONE
 hi String ctermbg=NONE ctermfg=62 cterm=NONE guibg=NONE guifg=#5f5fd7 gui=NONE
 hi Todo ctermbg=51 ctermfg=234 cterm=NONE guibg=#00ffff guifg=#1c1c1c gui=NONE
@@ -48,7 +48,7 @@ hi PmenuThumb ctermbg=254 ctermfg=234 cterm=NONE guibg=#e4e4e4 guifg=#1c1c1c gui
 hi FoldColumn ctermbg=249 ctermfg=234 cterm=NONE guibg=#b2b2b2 guifg=#1c1c1c gui=NONE
 hi Folded ctermbg=253 ctermfg=237 cterm=italic guibg=#dadada guifg=#3a3a3a gui=italic
 hi WildMenu ctermbg=230 ctermfg=234 cterm=NONE guibg=#ffffd7 guifg=#1c1c1c gui=NONE
-hi SpecialKey ctermbg=NONE ctermfg=234 cterm=NONE guibg=NONE guifg=#1c1c1c gui=NONE
+hi SpecialKey ctermbg=NONE ctermfg=218 cterm=NONE guibg=NONE guifg=#ffafd7 gui=NONE
 hi DiffAdd ctermbg=157 ctermfg=234 cterm=NONE guibg=#afffaf guifg=#1c1c1c gui=NONE
 hi DiffChange ctermbg=222 ctermfg=234 cterm=NONE guibg=#ffd787 guifg=#1c1c1c gui=NONE
 hi DiffDelete ctermbg=224 ctermfg=234 cterm=NONE guibg=#ffd7d7 guifg=#1c1c1c gui=NONE
