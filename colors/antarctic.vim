@@ -92,11 +92,11 @@ hi link EndOfBuffer Normal
 let g:fzf_colors = {
   \ 'fg': ['fg', 'Normal'],
   \ 'bg': ['bg', 'Normal'],
-  \ 'hl': ['bg', 'IncSearch'],
-  \ 'hl+': ['bg', 'IncSearch'],
+  \ 'hl': ['fg', 'String'],
+  \ 'hl+': ['bg', 'StatusLine'],
   \ 'fg+': ['fg', 'Normal'],
   \ 'bg+': ['bg', 'ColorColumn'],
-  \ 'pointer': ['bg', 'IncSearch'],
+  \ 'pointer': ['bg', 'StatusLine'],
   \ }
 
 " Generated with RNB (https://gist.github.com/romainl/5cd2f4ec222805f49eca)
