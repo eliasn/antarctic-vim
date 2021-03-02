@@ -77,13 +77,13 @@ hi Keyword ctermbg=NONE ctermfg=234 cterm=NONE guibg=NONE guifg=#1c1c1c gui=NONE
 hi Character ctermbg=NONE ctermfg=234 cterm=NONE guibg=NONE guifg=#1c1c1c gui=NONE
 hi helpHyperTextJump ctermbg=NONE ctermfg=20 cterm=underline guibg=NONE guifg=#0000d7 gui=underline
 
-hi link LspDiagnosticsError Error
-hi link LspDiagnosticsErrorSign Error
-hi link LspDiagnosticsErrorFloating Error
+hi link LspDiagnosticsDefaultError Error
+hi link LspDiagnosticsSignError Error
+hi link LspDiagnosticsUnderlineError Error
 hi link Number Constant
-hi link LspDiagnosticsWarning WarningMsg
-hi link LspDiagnosticsWarningSign WarningMsg
-hi link LspDiagnosticsWarningFloating WarningMsg
+hi link LspDiagnosticsDefaultWarning WarningMsg
+hi link LspDiagnosticsSignWarning WarningMsg
+hi link LspDiagnosticsUnderlineWarning WarningMsg
 hi link QuickFixLine Search
 hi link diffAdded DiffAdd
 hi link diffRemoved DiffDelete
